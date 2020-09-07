@@ -1,0 +1,547 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+::-webkit-scrollbar { 
+    width: 0px; 
+}
+.tongquat{
+    position: relative;
+    height: 876px;
+    width: 100%;
+    overflow: hidden;
+    transition: ease-in-out 1.3s;
+    background-color: #171717;
+}
+
+header.modau {
+    height: 876px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    transform: translateX(0px) scale(1);
+    transition: 0.4s;
+    margin-left: -15px;
+}
+
+.momo {
+    background-color: #5e5959;
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    height: 805px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+
+}
+.momo.momoxuathien {
+    opacity: 0.3;
+    visibility: visible;
+}
+
+img.hinhnen {
+    position: absolute;
+    z-index: 2;
+    background-size: cover;
+    transition: 0.4s;
+    opacity: 0;
+    animation: dautien 1s forwards;
+}
+
+@-webkit-keyframes dautien{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.Churatlon {
+    position: absolute;
+    z-index: 3;
+    top: 28%;
+    text-align: center;
+    width: 100%;
+    font-size: 140px;
+    color: white;
+    font-family: 'Bungee Shade', cursive;
+    transition: 0.4s;
+    opacity: 0;
+    animation: chutonhat 1s forwards;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes chutonhat{
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(20%);
+    }
+}
+
+.chuyendong1{
+    border-bottom: 905px solid #185a86;
+    border-left: 0px solid transparent;
+    border-right: 550px solid transparent;
+    height: 1000px;
+    width: 670px;
+    position: absolute;
+    z-index: 4;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-timing-function: ease-in-out 0.4s;
+    animation: thu1 0.6s forwards;
+    animation-delay: 1.3s;
+  }
+
+  @-webkit-keyframes thu1{
+    0%{
+        transform: translateX(-800px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 0.9;
+    }
+  }
+
+.chuyendong2{
+    border-bottom: 1005px solid #185a86;
+    border-left: 0px solid transparent;
+    border-right: 650px solid transparent;
+    height: 100px;
+    width: 930px;
+    position: absolute;
+    z-index: 4;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-timing-function: ease-in-out 0.4s;
+    animation: thu2 0.6s forwards;
+    animation-delay: 1.1s;
+  }
+
+  @-webkit-keyframes thu2{
+      0%{
+          transform: translateX(-800px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateX(0px);
+          opacity: 0.8;
+      }
+  }
+
+.chuyendong3 {
+    width: 0;
+    height: 0;
+    border-top: 350px solid #185a86;
+    border-left: 270px solid transparent;
+    position: absolute;
+    z-index: 4;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    transform-origin: 50%;
+    transition-timing-function: ease-in-out 0.4s;
+    animation: thu3 0.6s forwards;
+    animation-delay: 1.3s;
+  }
+
+  @-webkit-keyframes thu3{
+      0%{
+        transform: translate(800px);
+          opacity: 0;
+      }
+      100%{
+          transform: translateX(0px);
+          opacity: 0.7;
+      }
+  }
+
+.chulon_1{
+    position: absolute;
+    z-index: 5;
+    top: 45%; 
+    left: 3%;
+    color: white;
+    font-size: 33px;
+    font-family: 'Alegreya', serif;
+    transition: 0.4s;
+    animation: thu4 0.8s forwards;
+    animation-delay: 1.9s;
+    opacity: 0;
+}
+
+@-webkit-keyframes thu4{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.gachngang_1{
+    width: 5%;
+    height: 3px;
+    position: absolute;
+    z-index: 6;
+    top: 55%;
+    left: 3%;
+    background-color: white;
+    transition: 0.4s;
+    animation: thu4 0.8s forwards;
+    animation-delay: 2.2s;
+    opacity: 0;
+}
+
+.noidungnho_1{
+    position: absolute;
+    z-index: 7;
+    left: 3%;
+    top: 60%;
+    width: 23%;
+    color: white;
+    font-size: 18px;
+    font-family: 'Source Serif Pro', serif;
+    animation: thu4 0.8s forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+.nut_1{
+    position: absolute;
+    z-index: 8;
+    bottom: 15%;
+    left: 3%;
+    padding: 20px 30px;
+    border:solid 1.5px white;
+    color: white;
+    cursor: pointer;
+    animation: thu4 0.8s forwards;
+    animation-delay: 2.8s;
+    opacity: 0;
+    transition: ease-in-out 0.4s;
+}
+
+.nut_1:hover{
+    background-color: white;
+   color: black;
+}
+
+.nutbammenu{
+    position: sticky;
+    top: 5%;
+    left: 3%;
+    z-index: 9;
+    width: 45px;
+    height: 45px;
+    border: solid 2px white;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 7px;
+    transition: ease-in-out 0.3s;
+    animation: dautien 1s forwards;
+    animation-delay: 3.4s;
+    visibility: hidden;
+    margin-top:  -100px;
+}
+
+.nutbammenu:hover{
+    background-color: white;
+    /* border-color: #171717; */
+    opacity: 1;
+}
+
+.soc1, .soc2, .soc3{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    z-index: 9;
+    top: 11px;
+    left: 8px;
+    margin-left: -2px;
+}
+
+.soc2{
+    height: 3px;
+    top:20px;
+    left: 8px;
+}
+
+.soc3{
+    top: 30px;
+    left: 8px;
+}
+
+.nutbammenu:hover .soc1{
+    background-color: #171717;
+}
+.nutbammenu:hover .soc2{
+    background-color: #171717;
+}
+.nutbammenu:hover .soc3{
+    background-color: #171717;
+}
+.menu{
+    position: fixed;
+    height: 100%;
+    width: 261px;
+    background-color: #185a86;
+    z-index: 10;
+    visibility: hidden;
+    transition: 0.4s;
+    transform: translateX(-260px);
+    top:0;
+    left: 0;
+    opacity: 0.99;
+    border-right: solid 1px white;
+}
+.menu.daymenura{
+    transition: 0.4s;
+    visibility: visible;
+    transform: translateX(0px);
+}
+.modau.daytheomenu{
+    transform: translateX(260px);
+    transition: 0.4s;
+}
+/* Sửa đổi bootstrap */
+.btn-group-vertical{
+    height: 350px;
+    width: 100%;
+    position: absolute;
+}
+.btn.btn-outline-light{
+    border-width: 0px;
+}
+
+/* Phần danh lam thắng cảnh */
+
+.tongquat2{
+    position: relative;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    background: lightblue;
+    transition: ease-in-out 1.3s;
+}
+
+.span5{
+    font-size: 55px;
+    font-family: 'Bungee', cursive;
+    color: white;
+    margin-left: 100px;
+}
+
+.noidung_1div3{
+    font-size: 20px;
+    color: white;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+/* phần tìm hiểu chung */
+.tongquat3{
+    position: relative;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #171717;
+    transition: ease-in-out 1.3s;
+}
+.hinhnendiv2{
+    position: absolute;
+    top: 100px;
+    margin-left: 750px;
+    background-size: cover;
+    height: 1000px;
+    width: 770px;
+    z-index: 1;
+    animation-iteration-count: infinite;
+    transition: 0.4s;
+    animation-delay: 0.5s;
+}
+.hinhnen_2div2{
+    opacity: 0;
+    visibility: hidden;
+}
+.timhieuchung{
+    z-index: 1;
+    position: absolute;
+    top: 260px;
+    left: -150px;
+    color: white;
+    font-size: 85px;
+    font-family: 'Bungee', cursive;
+    transition: 0.4s;
+    /* animation-iteration-count: infinite; */
+}
+.bienmatnoidung_1div2{
+    opacity: 0;
+    visibility: hidden;
+}
+.chuyennoidung{
+    font-size: 50px;
+    margin-top:1000px;
+    color:white;
+    cursor: pointer;
+}
+.vohieuhoachuyennoidung{
+    pointer-events: none;
+    opacity: 0.4;
+}
+.chuyennoidung_1div2{
+
+    color: white;
+    font-size: 50px;
+    margin-top: -48px;
+    margin-left: -45px;
+    cursor: pointer;
+    z-index: 11;
+}
+.noidung_2div2{
+    margin-top:-450px;
+    color:white;
+    font-size: large;
+    font-family: 'Raleway', sans-serif; 
+    margin-left: -145px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.xuathien_2div2{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s;
+    /* transition-delay:0.5s ; */
+}
+
+.span1{
+    margin-left: 10px;
+}
+/* vẽ hình tròn mũi tên */
+.hinhtrongmuiten{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    top:500px;
+    left: 550px;
+    z-index: 10;
+    cursor: pointer;
+    transition: ease-in 0.4s;
+}
+.hinhtron{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: solid 1px white;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    --border-radius: 150px;
+    border-radius: 150px;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+}
+.muiten{
+    position: absolute;
+    top: 140px;
+    left:140px;
+    margin: auto;
+    z-index: 4;
+    color: white;
+    font-size: 30px;
+}
+
+/* đổi màu menu */
+.menu.doimaumenu{
+    background-color: #171717;
+}
+
+/* Thay đổi chiều cao của các div tổng */
+.tongquat.bienmat{
+    height: 0px;
+}
+
+
+/* Thay đổi hiệu ứng của hinhtronmuiten */
+.hinhtrongmuiten.dichlen{
+    top: 400px;
+}
+
+.hinhtrongmuiten.dichxuong{
+    top:450px;
+}
+
+.tongquat3.xuathientongquat3{
+    height: 1311px;
+}
+.tongquat2.xuathientongquat2{
+    height: 3500px;
+    background-color:#171717;
+}
+/* Nội dung tìm hiểu chung thẻ span2,3,4 */
+.span2, .span3, .span4{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.noidungtimhieuchung2, .noidungtimhieuchung3, .noidungtimhieuchung4{
+    position: absolute;
+    top: 600px;
+    left: -130px;
+}
+.noidungtimhieuchung3{
+    top: 700px;
+}
+.noidungtimhieuchung4{
+    top: 800px;
+
+}
+.dacsan{
+    top:200px;
+}
+.trien{
+    width:250px;
+    height:5px;
+    background-color: white;
+}
+.trien1{
+    width: 250px;
+    height: 5px;
+    background-color: white;
+}
+
+
